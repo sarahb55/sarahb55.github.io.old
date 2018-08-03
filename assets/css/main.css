@@ -45,6 +45,14 @@ blockquote, q {
 		content: '';
 		content: none;
 	}
+	
+	.figcaption, .figcaption a{
+		font-size: 12px;
+		line-height: 14px;
+		text-decoration: none;
+		color: #666;
+		width: 100%;
+	}
 
 table {
 	border-collapse: collapse;
@@ -1306,7 +1314,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/bg2.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1554,8 +1562,16 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
+		
+		.image img:hover, iframe:hover{
 
-		.image.fit {
+			-webkit-box-shadow: 10px 10px 25px 0px rgba(82,76,82,1);
+			-moz-box-shadow: 10px 10px 25px 0px rgba(82,76,82,1);
+			box-shadow: 10px 10px 25px 0px rgba(82,76,82,1);
+			
+		}
+
+		.image.fit .iframe.fit{
 			display: block;
 			width: 100%;
 		}
